@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pinterest Clone</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#mypins">My Pins</a></li>
+                <li><a href="#myboards">My Boards</a></li>
+                <li class="add-pin"><a href="#addpin">Add a Pin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- /////////////////////////////////////Starting Main//////////////////////////////////////////// -->
+    <main>
+<!-- HOME! -->
+        <section id="home">
+            <!-- Profile PIC -->
+            <div class="profile-section">
+                <img src="/uploads/profile.jpg" alt="Profile Picture">
+                <p><a href="#" id="add-profile">Click here to add a profile picture!</a></p>
+            </div>
+
+            <!-- pins/boards counts -->
+            <div class="counts-section">
+                <div class="pins-count">
+                    <h2>0</h2>
+                    <p>Pins</p>
+                </div>
+                <div class="boards-count">
+                    <h2>0</h2>
+                    <p>Boards</p>
+                </div>
+            </div>
+        </section>
+<!-- END HOME! -->
+
+<!-- MY PINS! -->
+        <section id="mypins">
+            <!-- Pins display here -->
+            <div class="pins-section">
+                <!-- Pins dynamically generated here -->
+            </div>
+        </section>
+
+        <!-- My Boards Tab -->
+        <section id="myboards">
+            <div class="boards-section">
+                <!-- Boards will be dynamically generated here -->
+            </div>
+        </section>
+
+    </main>
+<!-- ////////////////////////////////////Ending Main///////////////////////////////////// -->
+
+    <!-- Modals for adding Pins and Boards -->
+
+    <div id="addpin-modal" class="modal">
+        <!-- Add Pin Modal -->
+    </div>
+
+    <div id="addboard-modal" class="modal">
+        <!-- Add Board Modal -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
